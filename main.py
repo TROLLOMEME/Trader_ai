@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 
 from solders.keypair import Keypair
 from solana.rpc.api import Client
-from solana.transaction import Transaction
 from solana.publickey import PublicKey
 
 # Load env variables
