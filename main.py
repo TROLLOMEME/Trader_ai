@@ -10,6 +10,9 @@ from solana.rpc.api import Client
 
 Load .env file 
 
+from dotenv import load_dotenv
+
+# Load environment variables
 load_dotenv()
 
 OpenAI setup 
