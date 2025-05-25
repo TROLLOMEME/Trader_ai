@@ -1,4 +1,4 @@
-solana
+solders
 python-dotenv
 openai
 requests
