@@ -4,14 +4,16 @@ import json
 import requests
 import openai
 from dotenv import load_dotenv
-from solana.keypair import Keypair
+from solders.keypair import Keypair
 from solana.rpc.api import Client
 
+# Load .env variables
 load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 MAX_SOL_PER_TRADE = float(os.getenv("MAX_SOL_PER_TRADE", 0.1))
 
+# Load keypair from keypair.json
 with open("keypair.json") as f:
     secret = json.load(f)
 keypair = Keypair.from_secret_key(bytes(secret))
